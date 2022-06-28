@@ -1,9 +1,9 @@
 import React from 'react'
-<<<<<<< HEAD
+
 export const All = () => {
   return (
     <div>
-        {/* <div className="Happy">
+        <div className="Happy">
         <div className="">
             <img src="./img/aqua.png" alt="" />
         </div>
@@ -40,7 +40,7 @@ export const All = () => {
                 <button className='but'>Buy now</button>
             </div>
         </div>
-        </div> */}
+        </div>
     </div>
   )
 }
@@ -63,7 +63,7 @@ export const Adress = () => {
     </>
   )
 }
-=======
+
 
 export const About = () => {
   return (
@@ -117,4 +117,4 @@ export const Watch = () => {
 }
 
 
->>>>>>> 1ab2419dd67d61ea35a316009d6648eaf2d82f1d
+
