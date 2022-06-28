@@ -1,11 +1,9 @@
 import './App.css';
-import { About,Mani,Watch } from "./components/All"
+import Nav from './components/Nav';
 function From() {
   return (
     <>
-    <About/>
-    <Mani/>
-    <Watch/>
+    <Nav/>
     </>
   )
 }
