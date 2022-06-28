@@ -118,8 +118,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding: 20px ;
-   
+    padding: 20px;
+
 }
 
 .flex2 h1 {
@@ -138,7 +138,7 @@ nav {
 }
 
 .flex2 {
-    width: 500px; 
+    width: 500px;
     position: relative;
 }
 
@@ -156,18 +156,21 @@ nav {
     padding: 11px 58px;
     background: #005672;
 }
-.flex1 img{
+
+.flex1 img {
     width: 400px;
     height: 400px;
 }
-.close{
+
+.close {
     position: absolute;
     top: 0;
     right: 0;
     background: none;
     font-size: 40px
 }
-.modal_oynam{
+
+.modal_oynam {
     position: fixed;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -181,7 +184,164 @@ nav {
     z-index: -99;
     transition: all .4s ease-in-out;
 }
-.modal_oynam.activ{
+
+.modal_oynam.activ {
     opacity: 1;
     z-index: 99;
+}
+
+.im {
+    display: flex;
+    align-items: center;
+}
+
+.im h1 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-transform: capitalize;
+
+    color: #005672;
+}
+
+.to_bir {
+    padding: 23px 0 71px 180px;
+}
+
+.tabl {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 68px 27px 44px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    width: 600px;
+    margin-top: 100px;
+}
+
+.tabl p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding: 4px 0 4px 0;
+    color: #5A5A5A;
+
+}
+
+.fl1 img {
+    width: 120px;
+    height: 130px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.fl1 img:nth-child(3) {
+    height: 180px;
+}
+
+.fl1 img:nth-child(2) {
+    height: 150px;
+}
+
+.pilus {
+    padding: 10px 15px;
+    font-size: 20px;
+    border: 1px solid rgba(221, 219, 219, 0.776);
+}
+
+.pilus1 {
+    padding: 10px 50px;
+    font-size: 20px;
+    background: none;
+    border: 1px solid rgba(221, 219, 219, 0.826);
+
+}
+
+/* .none{
+} */
+.qty {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.btnsd button {
+    padding: 10px 30px;
+    background: none;
+    border: 1px solid black;
+    color: #005672;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.btnsd button:nth-child(2) {
+    background: #005672;
+    color: #fff;
+    border: 1px solid #005672;
+    margin-left: 20px;
+
+}
+
+.btnsd {
+    margin-top: 20px;
+}
+
+.paymet {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: capitalize;
+        margin-top: 148px;
+    color: #5A5A5A;
+}
+
+.paymet1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    /* line-height: 15px; */
+    text-transform: capitalize;
+
+    color: #5A5A5A;
+}
+.strel p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #5A5A5A;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.strel p > i{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-transform: capitalize;
+color: #5A5A5A;
+/* color: #CBCF06; */
+margin-left: 5px;
+transition: all .3s ease;
+}
+.strel img{
+    padding: 0px 5px 0 5px;
+    transform: translateY(4px);
+}
+.strel{
+    margin-top: 30px;
+}
+.strel p>i:hover{
+    color: #CBCF06;
+    cursor: pointer;
+}
+.qr{
+    margin-top: 40px;
+    text-align: center;
+    border: 1px dashed black;
+    padding: 19px 100px;
+    width: 600px;
 }

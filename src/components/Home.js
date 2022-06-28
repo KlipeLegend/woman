@@ -62,16 +62,32 @@ const Home = () => {
             </div>
             <div className={quick ? "modal_oynam activ" : "modal_oynam"}>
                 <div className="modalim">
-                <div className="flex1">
-                    <img src="./img/fish.png" alt="" />
-                </div>
-                <div className="flex2">
-                    <h1>Purple plate corals</h1>
-                    <hr />
-                    <p>Lorem ipsum dolor sit amet consectetur aing elit. Iste excepturi illum assumenda magnam provident voluptatum earum, incidunt fugit quibusdam mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae!</p>
-                    <button className='view'>VIEW FULL DETAILS</button>
-                    <button className='close' onClick={Quick}>X</button>
-                </div>
+                    <div className="flex1">
+                        <img src="./img/fish.png" alt="" />
+                        <div className="fl1">
+                            <img src="./img/fish.png" alt="" />
+                            <img src="./img/fish.png" alt="" />
+                            <img src="./img/fish.png" alt="" />
+                        </div>
+                    </div>
+                    <div className="flex2">
+                        <h1>Purple plate corals</h1>
+                        <hr />
+                        <p>Lorem ipsum dolor sit amet consectetur aing elit. Iste excepturi illum assumenda magnam provident voluptatum earum, incidunt fugit quibusdam mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae!</p>
+                        <button className='view'>VIEW FULL DETAILS</button>
+                        <p className='qty'>Qty</p>
+                        <div className='none'>
+                            <button className='pilus'>-</button>
+                            <button className='pilus1'>1</button>
+                            <button className='pilus'>+</button>
+                        </div>
+                        <div className="btnsd">
+                            <button>ADD TO CARD</button>
+                            <button>BUY NOW</button>
+                        </div>
+
+                        <button className='close' onClick={Quick}>X</button>
+                    </div>
                 </div>
             </div>
         </div>
