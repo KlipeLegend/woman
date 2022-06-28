@@ -27,8 +27,6 @@ export const Mani = () => {
     </>
   )
 }
-
-
 export const Watch = () => {
   return (
     <>
@@ -50,5 +48,3 @@ export const Watch = () => {
     </>
   )
 }
-
-
