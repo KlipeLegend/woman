@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import {About, Mani, Watch} from './All'
 
 const Home = () => {
     const [quick, setQuick] = useState(false)
@@ -44,6 +45,9 @@ const Home = () => {
     ])
     return (
         <div>
+            <About/>
+            <Mani/>
+            <Watch/>
             <div className="container">
 
                 {

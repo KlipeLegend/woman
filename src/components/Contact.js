@@ -1,4 +1,5 @@
 import React from 'react'
+import { Flex } from './All'
 
 const Contact = () => {
     return (
@@ -34,7 +35,9 @@ const Contact = () => {
 
                     </div>
                 </div>
-                <div className="to_ikki"></div>
+                <div className="to_ikki">
+                    <Flex/>
+                </div>
             </div>
         </div>
     )

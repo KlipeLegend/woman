@@ -439,3 +439,6 @@ transition: all .3s ease;
     padding: 19px 100px;
     width: 600px;
 }
+.to_katta{
+    display: flex;
+}
