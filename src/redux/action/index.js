@@ -25,3 +25,9 @@ export const Show = (data) => {
         payload: data
     }
 }
+
+export const Save = () => {
+    return {
+        type: 'save'
+    }
+}

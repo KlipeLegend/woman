@@ -1,0 +1,66 @@
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { Save, Show } from '../redux/action'
+
+const Home = () => {
+    const path = useNavigate()
+    const dispatch = useDispatch()
+    const data = useSelector((state) => state.todoReducers.data)
+    const show = useSelector((state) => state.todoReducers.show)
+    const [quick, setQuick] = useState(false)
+    useEffect(() => {
+        if (localStorage.getItem('data')) {
+            dispatch(Save())
+        } else {
+            localStorage.setItem('data', JSON.stringify(data))
+        }
+    }, [])
+    const Quick = (data) => {
+        setQuick(true)
+        dispatch(Show(data))
+    }
+    const Close = () => {
+        setQuick(false)
+    }
+    const view = () => {
+        path('/shop')
+    }
+    return (
+        <div>
+            <div className="container">
+                {
+                    data.map((val) => (
+                        <div className="card" key={val.id}>
+                            <div className="rgba">
+                                <h1>{val.nomi}</h1>
+                                <p>{val.narxi}</p>
+                                <button onClick={() => Quick(val)}>quick review</button>
+                            </div>
+                            <img src={val.img} alt="" />
+                        </div>
+                    ))
+                }
+            </div>
+            <div className={quick ? "modal_oynam activ" : "modal_oynam"}>
+                <div className="modalim">
+                    <div className="flex1">
+                        <img src="./img/fish.png" alt="" />
+                    </div>
+                    <div className="flex2">
+                        <h1>{show.nomi}</h1>
+                        <hr />
+                        <h4>{show.narxi}</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur aing elit. Iste excepturi illum assumenda magnam provident voluptatum earum, incidunt fugit quibusdam mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae!</p>
+                        <button className='view' onClick={view}>VIEW FULL DETAILS</button>
+                        <button className='close' onClick={Close}>X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Home
