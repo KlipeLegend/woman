@@ -1,7 +1,15 @@
-import React from 'react'
-import { Flex, Payme } from './All'
+import React, { useState } from 'react'
+import { Building, Button, Flex, Payme } from './All'
 
 const Contact = () => {
+    const [box1, setBox1] = useState(false)
+    const [box, setBox] = useState(false)
+    const Box1 = () => {
+        setBox1(!box1)
+    }
+    const Box = () => {
+        setBox(!box)
+    }
     return (
         <div>
             <div className="to_katta">
@@ -34,7 +42,19 @@ const Contact = () => {
                         <h2>₹ 5,180.54</h2>
 
                     </div>
-                    <Payme/>
+                    <Payme />
+                    <Building />
+                    <div className="pay11">
+                        <div className="pay_logo1">
+                            <button onClick={Box1} className={box1 ? "box_button activ" : "box_button"}></button>
+                            <h5>Same as shipping address</h5>
+                        </div>
+                        <div className="pay_logo1">
+                            <button onClick={Box} className={box ? "box_button activ" : "box_button"}></button>
+                            <h5>Use a different building address</h5>
+                        </div>
+                    </div>
+                    <Button />
                 </div>
                 <div className="to_ikki">
                     <Flex />

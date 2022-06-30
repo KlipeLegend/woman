@@ -125,12 +125,8 @@ export const Building = () => {
 export const Button = () => {
   return (
     <div className='button-one'>
-      <div className='button-twoo'>
         <button className='button-first'>Complete order</button>
-      </div>
-      <div className='button-two'>
         <button className='button-firstt'>Return to shiping</button>
-      </div>
     </div>
   )
 }
@@ -265,6 +261,7 @@ export const Payme = () => {
 
         </div>
       </div>
+      
 
     </>
   )

@@ -341,20 +341,15 @@ nav {
 }
 
 .adress {
-    padding: 10px 279px 50px 232px;
+    /* padding: 10px 279px 50px 232px; */
+    margin-top: 20px;
 }
 
 .button-one {
-    display: flex;
-    padding: 0px 279px 148px 232px;
+ margin-top: 30px;
 }
 
-.button-first {
-    padding: 14px 35px 17px 44px;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 18px;
-}
+
 
 .im {
     display: flex;
@@ -616,30 +611,32 @@ nav {
     color: #FFFBFB;
 }
 
-.button-twoo button {
+.button-first {
+    padding: 14px 35px 17px 44px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    color: #FFFBFB;
     background: #005672;
-    border: none;
-}
-
-.button-two button {
-    background: none;
-    border: none;
+    cursor: pointer;
 }
 
 .button-firstt {
-    padding: 16px 35px 17px 44px;
-    font-family: 'Roboto';
+    padding: 14px 35px 17px 44px;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    text-transform: uppercase;
+    border: none;
+    background: none;
     color: #CBCF06;
-    border: 0;
     cursor: pointer;
-    margin-top: 40px;
-    transform: translateX(200px);
+    text-transform: uppercase;
+    
 }
+
 
 .but:hover {
     width: 237px;
@@ -885,4 +882,21 @@ nav {
 
 .box_button.activ {
     background: rgb(0, 98, 255);
+}
+.pay11{
+    display: block;
+    border-radius: 10px;
+      border: 1px solid rgb(195, 195, 195);    
+      width: 600px;
+  
+}
+.pay_logo1{
+    /* margin-left: 10px; */
+    display: flex;
+    border-bottom: 1px solid rgb(195, 195, 195);
+  
+
+    padding: 15px 20px;
+    gap: 20px;
+  
 }
