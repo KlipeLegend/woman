@@ -4,6 +4,7 @@ function From() {
   return (
     <>
     <Nav/>
+  
     </>
   )
 }
