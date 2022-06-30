@@ -1,6 +1,11 @@
 import React from 'react'
+<<<<<<< HEAD
 import {All} from './All'
 import {Adress} from './All'
+=======
+import { Flex, Payme } from './All'
+
+>>>>>>> fd19f7d046e56ef14c24f9bd1945016e0462ce2c
 const Contact = () => {
     return (
         <div>
@@ -36,8 +41,11 @@ const Contact = () => {
                         <h2>₹ 5,180.54</h2>
 
                     </div>
+                    <Payme/>
                 </div>
-                <div className="to_ikki"></div>
+                <div className="to_ikki">
+                    <Flex />
+                </div>
             </div>
         </div>
     )

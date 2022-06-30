@@ -1,59 +1,46 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import { useState } from 'react'
-
+import { useDispatch, useSelector } from 'react-redux'
+import { Save, Show } from '../redux/action'
+import { About, Mani, Watch } from './All'
 const Home = () => {
+    const path = useNavigate()
+    const dispatch = useDispatch()
+    const data = useSelector((state) => state.todoReducers.data)
+    const show = useSelector((state) => state.todoReducers.show)
     const [quick, setQuick] = useState(false)
-    const Quick = () => {
-        setQuick(!quick)
-    }
-    const [data, setData] = useState([
-        {
-            id: 0,
-            img: "./img/fish.png"
-        },
-        {
-            id: 1,
-            img: "./img/fish.png"
-        },
-        {
-            id: 2,
-            img: "./img/fish.png"
-        },
-        {
-            id: 3,
-            img: "./img/fish.png"
-        },
-        {
-            id: 4,
-            img: "./img/fish.png"
-        },
-        {
-            id: 5,
-            img: "./img/fish.png"
-        },
-        {
-            id: 6,
-            img: "./img/fish.png"
-        },
-        {
-            id: 7,
-            img: "./img/fish.png"
+    useEffect(() => {
+        if (localStorage.getItem('data')) {
+            dispatch(Save())
+        } else {
+            localStorage.setItem('data', JSON.stringify(data))
         }
-
-
-    ])
+    }, [])
+    const Quick = (data) => {
+        setQuick(true)
+        dispatch(Show(data))
+    }
+    const Close = () => {
+        setQuick(false)
+    }
+    const view = () => {
+        path('/shop')
+    }
     return (
         <div>
+            <About />
+            <Mani />
+            <Watch />
             <div className="container">
-
                 {
                     data.map((val) => (
-
                         <div className="card" key={val.id}>
                             <div className="rgba">
-                                <h1>Happy coral reef <br />/Acrylic no canvas/ <br /> </h1>
-                                <p>₹ 5,000</p>
-                                <button onClick={Quick}>quick review</button>
+                                <h1>{val.nomi}</h1>
+                                <p>{val.narxi}</p>
+                                <button onClick={() => Quick(val)}>quick review</button>
                             </div>
                             <img src={val.img} alt="" />
                         </div>
@@ -62,21 +49,28 @@ const Home = () => {
             </div>
             <div className={quick ? "modal_oynam activ" : "modal_oynam"}>
                 <div className="modalim">
-                    <div className="flex1">
+                    <div className='modalim2'>
+                          <div className="flex1">
                         <img src="./img/fish.png" alt="" />
+                    </div>
+                    <div className="flex2">
+                        <h1>{show.nomi}</h1>
+                        <hr />
+                        <h4>{show.narxi}</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur aing elit. Iste excepturi illum assumenda magnam provident voluptatum earum, incidunt fugit quibusdam mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae!</p>
+                        <button className='view' onClick={view}>VIEW FULL DETAILS</button>
+                        <button className='close' onClick={Close}>X</button>
+
+                    </div>
+                    </div>
+                    <div className="flex3">
                         <div className="fl1">
                             <img src="./img/fish.png" alt="" />
                             <img src="./img/fish.png" alt="" />
                             <img src="./img/fish.png" alt="" />
                         </div>
-                    </div>
-                    <div className="flex2">
-                        <h1>Purple plate corals</h1>
-                        <hr />
-                        <p>Lorem ipsum dolor sit amet consectetur aing elit. Iste excepturi illum assumenda magnam provident voluptatum earum, incidunt fugit quibusdam mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae!</p>
-                        <button className='view'>VIEW FULL DETAILS</button>
-                        <p className='qty'>Qty</p>
-                        <div className='none'>
+                        <div>
+                                   <div className='none'>
                             <button className='pilus'>-</button>
                             <button className='pilus1'>1</button>
                             <button className='pilus'>+</button>
@@ -85,9 +79,11 @@ const Home = () => {
                             <button>ADD TO CARD</button>
                             <button>BUY NOW</button>
                         </div>
-
-                        <button className='close' onClick={Quick}>X</button>
+                        </div>
+                   
                     </div>
+
+            
                 </div>
             </div>
         </div>

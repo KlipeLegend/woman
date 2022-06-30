@@ -1,8 +1,9 @@
 import React from 'react'
+import { All } from './All'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div> <All/></div>
   )
 }
 

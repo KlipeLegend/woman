@@ -8,5 +8,9 @@ function From() {
     </>
   )
 }
+<<<<<<< HEAD
 export default From;
 
+=======
+export default From
+>>>>>>> fd19f7d046e56ef14c24f9bd1945016e0462ce2c
