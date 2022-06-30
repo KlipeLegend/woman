@@ -147,3 +147,28 @@ return(
   </>
 )
 }
+
+export const Modal22 = () =>{
+  return(
+    <div className='hammasi'>
+                    <div className="flex22">
+                        <div className="fl11">
+                            <img src="./img/fish.png" alt="" />
+                        </div>
+                    </div>
+                    <div className='qty111'>
+                        <p className='qty'>Qty</p>
+                        <div className='none'>
+                            <button className='pilus'>-</button>
+                            <button className='pilus1'>1</button>
+                            <button className='pilus'>+</button>
+                        </div>
+                        <div className="btnsd">
+                            <button>ADD TO CARD</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        </div>
+
+      </div>
+  )
+}

@@ -680,3 +680,18 @@ transition: all .3s ease;
 .flexing{
     display: flex;
 }
+.hammasi{
+    display: flex;
+    margin: 50px 200px 0px 200px;
+    gap: 150px;
+
+}
+.qty111{
+    margin-top: 77px;
+}
+.fl11 img{
+    width: 250px;
+    height: 250px;
+}
+
+
