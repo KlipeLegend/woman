@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Save, Show } from '../redux/action'
-
+import {About, Mani, Watch} from './All'
 const Home = () => {
     const path = useNavigate()
     const dispatch = useDispatch()
@@ -30,6 +30,9 @@ const Home = () => {
     }
     return (
         <div>
+            <About/>
+            <Mani/>
+            <Watch/>
             <div className="container">
                 {
                     data.map((val) => (
@@ -56,6 +59,29 @@ const Home = () => {
                         <p>Lorem ipsum dolor sit amet consectetur aing elit. Iste excepturi illum assumenda magnam provident voluptatum earum, incidunt fugit quibusdam mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae!</p>
                         <button className='view' onClick={view}>VIEW FULL DETAILS</button>
                         <button className='close' onClick={Close}>X</button>
+                        <div className="fl1">
+                            <img src="./img/fish.png" alt="" />
+                            <img src="./img/fish.png" alt="" />
+                            <img src="./img/fish.png" alt="" />
+                        </div>
+                    </div>
+                    <div className="flex2">
+                        <h1>Purple plate corals</h1>
+                        <hr />
+                        <p>Lorem ipsum dolor sit amet consectetur aing elit. Iste excepturi illum assumenda magnam provident voluptatum earum, incidunt fugit quibusdam mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae!</p>
+                        <button className='view'>VIEW FULL DETAILS</button>
+                        <p className='qty'>Qty</p>
+                        <div className='none'>
+                            <button className='pilus'>-</button>
+                            <button className='pilus1'>1</button>
+                            <button className='pilus'>+</button>
+                        </div>
+                        <div className="btnsd">
+                            <button>ADD TO CARD</button>
+                            <button>BUY NOW</button>
+                        </div>
+
+                        <button className='close' onClick={Quick}>X</button>
                     </div>
                 </div>
             </div>
