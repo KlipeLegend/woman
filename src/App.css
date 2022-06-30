@@ -1,10 +1,12 @@
 /* ABOUT-CSS */
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:wght@200;300;400;500;600&family=Rancho&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .about-first {
     display: flex;
     align-items: center;
@@ -15,6 +17,7 @@
     left: 0px;
     top: 106px;
 }
+
 .about-second {
     width: 729px;
     height: 299px;
@@ -23,6 +26,7 @@
     border-radius: 11px;
     ;
 }
+
 .about-second h1 {
     font-family: 'Rancho';
     font-weight: 400;
@@ -32,6 +36,7 @@
     color: #FFFFFF;
     padding-top: 50px;
 }
+
 .about-second p {
     font-family: 'Poppins';
     font-weight: 400;
@@ -40,6 +45,7 @@
     text-align: center;
     color: #FFFFFF;
 }
+
 /* MANI-CSS */
 .mani-first {
     width: 1510px;
@@ -50,6 +56,7 @@
     transform: rotate(-0.06deg);
     margin-top: 77px;
 }
+
 .mani-first1 {
     height: 0px;
     left: 0px;
@@ -57,6 +64,7 @@
     border: 1px solid #E9E9E9;
     transform: rotate(-0.06deg);
 }
+
 .mani-second h1 {
     font-family: 'Rancho';
     font-weight: 400;
@@ -65,6 +73,7 @@
     text-align: center;
     color: #000000;
 }
+
 /* WATCH-CSS */
 .btn button {
     padding: 21px 84px 21px 83px;
@@ -73,14 +82,17 @@
     border-radius: 10px;
     margin: 40px 0px 0px 65px;
 }
-.watch-first{
+
+.watch-first {
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(2, auto);
     margin-top: 250px;
 }
-.watch-second{
+
+.watch-second {
     margin-left: 190px;
 }
+
 .watch-second h1 {
     font-family: 'Poppins';
     font-weight: 400;
@@ -89,6 +101,7 @@
     color: #414040;
     margin-left: 30px;
 }
+
 .watch-second p {
     font-family: 'Poppins';
     font-weight: 400;
@@ -212,8 +225,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding: 20px ;
-   
+    padding: 20px;
+
 }
 
 .flex2 h1 {
@@ -232,7 +245,7 @@ nav {
 }
 
 .flex2 {
-    width: 500px; 
+    width: 500px;
     position: relative;
 }
 
@@ -250,18 +263,21 @@ nav {
     padding: 11px 58px;
     background: #005672;
 }
-.flex1 img{
+
+.flex1 img {
     width: 400px;
     height: 400px;
 }
-.close{
+
+.close {
     position: absolute;
     top: 0;
     right: 0;
     background: none;
     font-size: 40px
 }
-.modal_oynam{
+
+.modal_oynam {
     position: fixed;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -275,7 +291,67 @@ nav {
     z-index: -99;
     transition: all .4s ease-in-out;
 }
-.modal_oynam.activ{
+
+.modal_oynam.activ {
     opacity: 1;
     z-index: 99;
+}
+
+.adress h2 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: capitalize;
+    color: #5A5A5A;
+}
+
+.adress p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 45px;
+    text-transform: capitalize;
+    color: #5A5A5A;
+}
+
+.adress {
+    padding: 10px 279px 50px 232px;
+}
+
+.button-one {
+    display: flex;
+    padding: 0px 279px 148px 232px;
+}
+
+.button-first {
+    padding: 14px 35px 17px 44px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFBFB;
+}
+
+.button-twoo button {
+    background: #005672;
+    border: none;
+}
+
+.button-two button {
+    background: none;
+    border: none;
+}
+
+.button-firstt {
+    padding: 16px 35px 17px 44px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #CBCF06;
 }

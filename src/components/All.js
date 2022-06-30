@@ -48,3 +48,24 @@ export const Watch = () => {
     </>
   )
 }
+
+export const Building = () =>{
+  return(
+      <div className='adress'>
+          <h2>Billing address</h2>
+          <p>Lorem ipsum dolor sit amet consectetur ipsum dolor.</p>
+      </div>
+  )
+}
+export const Button = () =>{
+  return(
+    <div className='button-one'>
+        <div className='button-twoo'>
+            <button className='button-first'>Complete order</button>
+        </div>
+        <div className='button-two'>
+            <button className='button-firstt'>Return to shiping</button>
+        </div>
+    </div>
+  )
+}
