@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const All = () => {
   return (
@@ -114,22 +114,7 @@ export const Watch = () => {
   )
 }
 
-<<<<<<< HEAD
 
-export const Flex = () => {
-return(
-  <>
-  <div className="flexing">
-    <img src="./img/plants.png" alt="" />
-    <p>Height 30 Inches x Width 30 <br />
- inches / Comes without  frame / Hand Painted By Artist</p>
- <h3>$5,000</h3>
-  </div>
-  </>
-)
-}
-
-=======
 export const Flex = () => {
   return (
     <>
@@ -137,8 +122,82 @@ export const Flex = () => {
         <img src="./img/plants.png" alt="" />
         <p>Height 30 Inches x Width 30 <br />
           inches / Comes without  frame / Hand Painted By Artist</p>
+        <h3>$5,000</h3>
+      </div>
+      <div className="total">
+        <div>
+          <p>Subtotal</p>
+
+          <p>Shiping Charge</p>
+        </div>
+        <div>
+          <p>$5,000</p>
+          <p>$180,54</p>
+        </div>
+      </div>
+      <div className="amount">
+        <div>
+          <h1>Total Amount</h1>
+        </div>
+        <div>
+          <h1>$5,180,54</h1 >
+        </div>
       </div>
     </>
   )
 }
->>>>>>> f7991aa6742d19d8effde35de606bdb7d780495d
+
+export const Payme = () => {
+  const [box, setBox] = useState(false)
+  const [box1, setBox1] = useState(false)
+  const Box = () => {
+    setBox(!box)
+  }
+  const Box1 = () => {
+    setBox1(!box1)
+  }
+  return (
+    <>
+      <div className="paaaay">
+        <div className="pay">
+          <div className="pay_logo">
+            <img src="./img/pay.png" alt="" />
+          </div>
+          <div className="pay_item">
+            <img src="./img/visa.png" alt="" />
+            <img src="./img/red.jpg" alt="" />
+            <img src="./img/blue.png" alt="" />
+            <img src="./img/amex.png" alt="" />
+            <p>and more...</p>
+          </div>
+        </div>
+        <div className="credit">
+          <img src="./img/credit.png" alt="" />
+
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolores aspernatur dolorem qui harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nesciunt.</p>
+        </div>
+        <div className="pay1">
+          <div className="pay_logo">
+            <button onClick={Box} className={box ? "box_button activ" : "box_button"}></button>
+            <h5>Razorpy ( Cards, UPI, NetBanking)</h5>
+          </div>
+          <div className="pay_item">
+            <img src="./img/visa.png" alt="" />
+            <img src="./img/red.jpg" alt="" />
+            <img src="./img/blue.png" alt="" />
+            <img src="./img/amex.png" alt="" />
+          </div>
+        </div>
+        <div className="pay1">
+          <div className="pay_logo">
+            <button onClick={Box1} className={box1 ? "box_button activ" : "box_button"}></button>
+            <h5>Cash on delivery ( COD )</h5>
+          </div>
+
+        </div>
+      </div>
+
+    </>
+  )
+}
+

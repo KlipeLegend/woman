@@ -2,7 +2,9 @@ import React from 'react'
 
 const Paint = () => {
   return (
-    <div>Paint</div>
+    <div>
+      paint
+    </div>
   )
 }
 
