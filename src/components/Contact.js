@@ -1,13 +1,16 @@
 import React from 'react'
-
+import {All} from './All'
+import {Adress} from './All'
 const Contact = () => {
     return (
         <div>
+            <All/>
+            <Adress/>
             <div className="to_katta">
                 <div className="to_bir">
                     <div className="im">
                         <img src="./img/logotip.svg" alt="" />
-                        <h1>and T&M Production</h1>
+                        <h2 className='and'>and T&M Production</h2>
                     </div>
                     <div className="strel">
                         <p><i>Card</i><img src="./img/next.svg" /><i>Information</i><img src="./img/next.svg" /><i>Shipping<img src="./img/next.svg" /></i>Payment<img src="./img/next.svg" /></p>
