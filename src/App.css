@@ -220,13 +220,23 @@ nav {
 
 .modalim {
     background: #fff;
-    display: flex;
+    display: block;
     align-items: center;
     gap: 30px;
     padding: 20px;
 
 }
-
+.modalim2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.flex3{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
 .flex2 h1 {
     font-weight: 600;
     font-size: 40px;
