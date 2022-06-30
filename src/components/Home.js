@@ -3,19 +3,21 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Save, Show } from '../redux/action'
-import {About, Mani, Watch} from './All'
+import { Add, Minus, Plus, Save, Show } from '../redux/action'
+import { About, Mani, Watch } from './All'
 const Home = () => {
     const path = useNavigate()
     const dispatch = useDispatch()
     const data = useSelector((state) => state.todoReducers.data)
+    const local = useSelector((state) => state.todoReducers.local)
     const show = useSelector((state) => state.todoReducers.show)
     const [quick, setQuick] = useState(false)
     useEffect(() => {
         if (localStorage.getItem('data')) {
             dispatch(Save())
         } else {
-            localStorage.setItem('data', JSON.stringify(data))
+            localStorage.setItem('data', JSON.stringify(local))
+            dispatch(Save())
         }
     }, [])
     const Quick = (data) => {
@@ -28,11 +30,20 @@ const Home = () => {
     const view = () => {
         path('/shop')
     }
+    const haridFun = () => {
+        dispatch(Add())
+    }
+    const plusFun = () => {
+        dispatch(Plus())
+    }
+    const minusFun = () => {
+        dispatch(Minus())
+    }
     return (
         <div>
-            <About/>
-            <Mani/>
-            <Watch/>
+            <About />
+            <Mani />
+            <Watch />
             <div className="container">
                 {
                     data.map((val) => (
@@ -66,22 +77,16 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="flex2">
-                        <h1>Purple plate corals</h1>
-                        <hr />
-                        <p>Lorem ipsum dolor sit amet consectetur aing elit. Iste excepturi illum assumenda magnam provident voluptatum earum, incidunt fugit quibusdam mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae!</p>
-                        <button className='view'>VIEW FULL DETAILS</button>
                         <p className='qty'>Qty</p>
                         <div className='none'>
-                            <button className='pilus'>-</button>
-                            <button className='pilus1'>1</button>
-                            <button className='pilus'>+</button>
+                            <button className='pilus' onClick={minusFun}>-</button>
+                            <button className='pilus1'>{show.count}</button>
+                            <button className='pilus' onClick={plusFun}>+</button>
                         </div>
                         <div className="btnsd">
-                            <button>ADD TO CARD</button>
+                            <button onClick={haridFun}>ADD TO CARD</button>
                             <button>BUY NOW</button>
                         </div>
-
-                        <button className='close' onClick={Quick}>X</button>
                     </div>
                 </div>
             </div>
