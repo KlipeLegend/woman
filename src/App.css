@@ -454,6 +454,7 @@ transition: all .3s ease;
 }
 .to_katta{
     display: flex;
+<<<<<<< HEAD
 }
 
 
@@ -608,4 +609,6 @@ transition: all .3s ease;
 }
 .flexing{
     display: flex;
+=======
+>>>>>>> f7991aa6742d19d8effde35de606bdb7d780495d
 }
