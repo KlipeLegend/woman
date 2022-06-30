@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex } from './All'
+import { Flex, Payme } from './All'
 
 const Contact = () => {
     return (
@@ -34,9 +34,10 @@ const Contact = () => {
                         <h2>₹ 5,180.54</h2>
 
                     </div>
+                    <Payme/>
                 </div>
                 <div className="to_ikki">
-                    <Flex/>
+                    <Flex />
                 </div>
             </div>
         </div>

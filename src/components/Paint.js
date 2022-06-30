@@ -1,8 +1,11 @@
 import React from 'react'
+import { Modal22 } from "./All"
 
 const Paint = () => {
   return (
-    <div>Paint</div>
+    <div>
+    {/* <Modal22/> */}
+    </div>
   )
 }
 

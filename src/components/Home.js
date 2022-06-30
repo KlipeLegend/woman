@@ -40,7 +40,7 @@ const Home = () => {
         dispatch(Minus())
     }
     return (
-        <div>
+        <>
             <About />
             <Mani />
             <Watch />
@@ -60,16 +60,21 @@ const Home = () => {
             </div>
             <div className={quick ? "modal_oynam activ" : "modal_oynam"}>
                 <div className="modalim">
-                    <div className="flex1">
-                        <img src="./img/fish.png" alt="" />
+                    <div className='modalim2'>
+                        <div className="flex1">
+                            <img src="./img/fish.png" alt="" />
+                        </div>
+                        <div className="flex2">
+                            <h1>{show.nomi}</h1>
+                            <hr />
+                            <h4>{show.narxi}</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur aing elit. Iste excepturi illum assumenda magnam provident voluptatum earum, incidunt fugit quibusdam mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae!</p>
+                            <button className='view' onClick={view}>VIEW FULL DETAILS</button>
+                            <button className='close' onClick={Close}>X</button>
+
+                        </div>
                     </div>
-                    <div className="flex2">
-                        <h1>{show.nomi}</h1>
-                        <hr />
-                        <h4>{show.narxi}</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur aing elit. Iste excepturi illum assumenda magnam provident voluptatum earum, incidunt fugit quibusdam mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae!</p>
-                        <button className='view' onClick={view}>VIEW FULL DETAILS</button>
-                        <button className='close' onClick={Close}>X</button>
+                    <div className="flex3">
                         <div className="fl1">
                             <img src="./img/fish.png" alt="" />
                             <img src="./img/fish.png" alt="" />
@@ -82,15 +87,24 @@ const Home = () => {
                             <button className='pilus' onClick={minusFun}>-</button>
                             <button className='pilus1'>{show.count}</button>
                             <button className='pilus' onClick={plusFun}>+</button>
+                            <div>
+                                <div className='none'>
+                                    <button className='pilus'>-</button>
+                                    <button className='pilus1'>1</button>
+                                    <button className='pilus'>+</button>
+                                </div>
+                                <div className="btnsd">
+                                    <button onClick={haridFun}>ADD TO CARD</button>
+                                    <button>BUY NOW</button>
+                                </div>
+                            </div>
                         </div>
-                        <div className="btnsd">
-                            <button onClick={haridFun}>ADD TO CARD</button>
-                            <button>BUY NOW</button>
-                        </div>
+
+
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
