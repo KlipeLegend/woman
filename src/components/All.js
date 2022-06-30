@@ -135,18 +135,7 @@ export const Button = () =>{
   )
 }
 
-export const Flex = () => {
-return(
-  <>
-  <div className="flexing">
-    <img src="./img/plants.png" alt="" />
-    <p>Height 30 Inches x Width 30 <br />
- inches / Comes without  frame / Hand Painted By Artist</p>
- <h3>$5,000</h3>
-  </div>
-  </>
-)
-}
+
 
 export const Modal22 = () =>{
   return(
@@ -172,7 +161,6 @@ export const Modal22 = () =>{
       </div>
   )
 }
-=======
 
 export const Flex = () => {
   return (
@@ -260,4 +248,3 @@ export const Payme = () => {
   )
 }
 
->>>>>>> f015468921e1bcf8ea4798b35adc559622a33c79

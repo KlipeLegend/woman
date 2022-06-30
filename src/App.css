@@ -155,7 +155,7 @@ nav {
     grid-template-columns: repeat(4, auto);
     background: #E9E9E9;
     padding: 45px 86px;
-    gap: 50px;
+    gap: 10px;
     margin-top: 100px;
 }
 
@@ -510,12 +510,9 @@ nav {
     padding: 19px 100px;
     width: 600px;
 }
-<<<<<<< HEAD
 .to_katta{
     display: flex;
 }
-=======
->>>>>>> f015468921e1bcf8ea4798b35adc559622a33c79
 
 
 
@@ -710,7 +707,6 @@ nav {
 
 .flexing {
     display: flex;
-<<<<<<< HEAD
 }
 .hammasi{
     display: flex;
@@ -726,8 +722,7 @@ nav {
     height: 250px;
 }
 
-
-=======
+.flexing{
     gap: 40px;
     padding: 73px 40px 89px 41px;
     border-bottom: 1px solid rgb(195, 195, 195);
@@ -739,7 +734,7 @@ nav {
 }
 
 .to_bir {
-    padding: 16px 0 16px 182px;
+    padding: 16px 0 16px 100px;
 }
 
 .to_katta {
@@ -865,4 +860,3 @@ nav {
 .box_button.activ {
     background: rgb(0, 98, 255);
 }
->>>>>>> f015468921e1bcf8ea4798b35adc559622a33c79
