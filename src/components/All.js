@@ -117,7 +117,6 @@ export const Watch = () => {
 }
 
 
-<<<<<<< HEAD
 export const Flex = () => {
 return(
   <>
@@ -125,10 +124,9 @@ return(
     <img src="./img/plants.png" alt="" />
     <p>Height 30 Inches x Width 30 <br />
  inches / Comes without  frame / Hand Painted By Artist</p>
+ <h3>$5,000</h3>
   </div>
   </>
 )
 }
-=======
 
->>>>>>> 5cc7531e4cf74db10b479daa040f0efa443c280b
