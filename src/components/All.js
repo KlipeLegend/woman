@@ -7,6 +7,7 @@ export const All = () => {
   const plusFun = () => {
     dispatch(Plus())
   }
+  /////////////////////
   const minusFun = () => {
     dispatch(Minus())
   }
