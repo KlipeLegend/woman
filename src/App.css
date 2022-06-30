@@ -82,7 +82,8 @@
     margin: 40px 0px 0px 65px;
     transition: all 0.3s ease-in-out;
 }
-.btn button:hover{
+
+.btn button:hover {
     background: rgba(93, 195, 205, 0.451);
 }
 
@@ -118,7 +119,7 @@
 body {
     margin: auto;
     display: block;
-    max-width: 1920px;
+    max-width: 1440px;
 }
 
 html {
@@ -155,7 +156,7 @@ nav {
     grid-template-columns: repeat(4, auto);
     background: #E9E9E9;
     padding: 45px 86px;
-    gap: 50px;
+    gap: 10px;
     margin-top: 100px;
 }
 
@@ -231,17 +232,20 @@ nav {
     padding: 20px;
 
 }
-.modalim2{
+
+.modalim2 {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.flex3{
+
+.flex3 {
     display: flex;
     align-items: center;
     gap: 40px;
     margin-top: 20px;
 }
+
 .flex2 h1 {
     font-weight: 600;
     font-size: 40px;
@@ -280,6 +284,14 @@ nav {
 .flex1 img {
     width: 400px;
     height: 400px;
+}
+
+.plusCards {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .close {
@@ -343,6 +355,7 @@ nav {
     font-weight: 700;
     font-size: 18px;
 }
+
 .im {
     display: flex;
     align-items: center;
@@ -520,7 +533,8 @@ nav {
     padding: 19px 100px;
     width: 600px;
 }
-.to_katta{
+
+.to_katta {
     display: flex;
 }
 
@@ -718,25 +732,28 @@ nav {
 .flexing {
     display: flex;
 }
-.hammasi{
+
+.hammasi {
     display: flex;
     margin: 50px 200px 0px 200px;
     gap: 150px;
 
 }
-.qty111{
+
+.qty111 {
     margin-top: 77px;
 }
-.fl11 img{
+
+.fl11 img {
     width: 250px;
     height: 250px;
 }
 
-/* .{
+.flexing {
     gap: 40px;
     padding: 73px 40px 89px 41px;
     border-bottom: 1px solid rgb(195, 195, 195);
-} */
+}
 
 .to_ikki {
     border-left: 2px solid #5A5A5A;
@@ -744,7 +761,7 @@ nav {
 }
 
 .to_bir {
-    padding: 16px 0 16px 182px;
+    padding: 16px 0 16px 100px;
 }
 
 .to_katta {
@@ -757,7 +774,6 @@ nav {
     justify-content: space-between;
     padding: 45px 30px 46px 80px;
     /* border-radius: 10px;  */
-    width: 650px;
     /* border-bottom: 1px solid rgb(195, 195, 195); */
 }
 
