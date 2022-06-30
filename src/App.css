@@ -1,4 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:wght@200;300;400;500;600&family=Rancho&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:wght@200;300;400;500;600&family=Rancho&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -79,6 +80,10 @@
     border: 1px solid #005672;
     border-radius: 10px;
     margin: 40px 0px 0px 65px;
+    transition: all 0.3s ease-in-out;
+}
+.btn button:hover{
+    background: rgba(93, 195, 205, 0.451);
 }
 
 .watch-first {
@@ -305,6 +310,39 @@ nav {
     z-index: 99;
 }
 
+.adress h2 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: capitalize;
+    color: #5A5A5A;
+}
+
+.adress p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 45px;
+    text-transform: capitalize;
+    color: #5A5A5A;
+}
+
+.adress {
+    padding: 10px 279px 50px 232px;
+}
+
+.button-one {
+    display: flex;
+    padding: 0px 279px 148px 232px;
+}
+
+.button-first {
+    padding: 14px 35px 17px 44px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+}
 .im {
     display: flex;
     align-items: center;
@@ -482,6 +520,12 @@ nav {
     padding: 19px 100px;
     width: 600px;
 }
+<<<<<<< HEAD
+.to_katta{
+    display: flex;
+}
+=======
+>>>>>>> f015468921e1bcf8ea4798b35adc559622a33c79
 
 
 
@@ -559,6 +603,27 @@ nav {
     text-align: center;
     text-transform: uppercase;
     color: #FFFBFB;
+}
+
+.button-twoo button {
+    background: #005672;
+    border: none;
+}
+
+.button-two button {
+    background: none;
+    border: none;
+}
+
+.button-firstt {
+    padding: 16px 35px 17px 44px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #CBCF06;
     border: 0;
     cursor: pointer;
     margin-top: 40px;
@@ -655,6 +720,24 @@ nav {
 
 .flexing {
     display: flex;
+<<<<<<< HEAD
+}
+.hammasi{
+    display: flex;
+    margin: 50px 200px 0px 200px;
+    gap: 150px;
+
+}
+.qty111{
+    margin-top: 77px;
+}
+.fl11 img{
+    width: 250px;
+    height: 250px;
+}
+
+
+=======
     gap: 40px;
     padding: 73px 40px 89px 41px;
     border-bottom: 1px solid rgb(195, 195, 195);
@@ -792,3 +875,4 @@ nav {
 .box_button.activ {
     background: rgb(0, 98, 255);
 }
+>>>>>>> f015468921e1bcf8ea4798b35adc559622a33c79

@@ -114,6 +114,65 @@ export const Watch = () => {
   )
 }
 
+export const Building = () =>{
+  return(
+      <div className='adress'>
+          <h2>Billing address</h2>
+          <p>Lorem ipsum dolor sit amet consectetur ipsum dolor.</p>
+      </div>
+  )
+}
+export const Button = () =>{
+  return(
+    <div className='button-one'>
+        <div className='button-twoo'>
+            <button className='button-first'>Complete order</button>
+        </div>
+        <div className='button-two'>
+            <button className='button-firstt'>Return to shiping</button>
+        </div>
+    </div>
+  )
+}
+
+export const Flex = () => {
+return(
+  <>
+  <div className="flexing">
+    <img src="./img/plants.png" alt="" />
+    <p>Height 30 Inches x Width 30 <br />
+ inches / Comes without  frame / Hand Painted By Artist</p>
+ <h3>$5,000</h3>
+  </div>
+  </>
+)
+}
+
+export const Modal22 = () =>{
+  return(
+    <div className='hammasi'>
+                    <div className="flex22">
+                        <div className="fl11">
+                            <img src="./img/fish.png" alt="" />
+                        </div>
+                    </div>
+                    <div className='qty111'>
+                        <p className='qty'>Qty</p>
+                        <div className='none'>
+                            <button className='pilus'>-</button>
+                            <button className='pilus1'>1</button>
+                            <button className='pilus'>+</button>
+                        </div>
+                        <div className="btnsd">
+                            <button>ADD TO CARD</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        </div>
+
+      </div>
+  )
+}
+=======
 
 export const Flex = () => {
   return (
@@ -201,3 +260,4 @@ export const Payme = () => {
   )
 }
 
+>>>>>>> f015468921e1bcf8ea4798b35adc559622a33c79
