@@ -36,3 +36,29 @@ export const Clear = () => {
         type: 'clear'
     }
 }
+
+export const Del = (data) => {
+    return {
+        type: 'del',
+        payload: data
+    }
+}
+export const Mminus = (data) => {
+    return {
+        type: 'Miniminus',
+        payload: data
+    }
+}
+export const Mplus = (data) => {
+    return {
+        type: 'Miniplus',
+        payload: data
+    }
+}
+
+export const Open = (data) => {
+    return {
+        type: 'open',
+        payload: data
+    }
+}

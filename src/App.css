@@ -731,13 +731,29 @@ nav {
 
 .hammasi {
     display: flex;
+    align-items: center;
     margin: 50px 200px 0px 200px;
     gap: 150px;
 
 }
 
+.absol {
+    top: 55px;
+    left: 175px;
+    background: #C4C4C4;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    border-radius: 50%;
+    padding: 2px 8px;
+    position: absolute !important;
+}
+
 .qty111 {
-    margin-top: 77px;
+    /* margin-top: 77px; */
 }
 
 .fl11 img {
@@ -900,6 +916,7 @@ nav {
     padding: 15px 20px;
     gap: 20px;
 
+<<<<<<< HEAD
 }
 
 .flex4 {
@@ -1214,4 +1231,6 @@ nav {
         /* transform: translateY(270px); */
         margin-top: -200px;
     }
+=======
+>>>>>>> ac7563d7a92925c441ef2b4b5261d906dd767f0b
 }
