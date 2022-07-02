@@ -19,7 +19,7 @@ const Contact = () => {
                         <h1>and T&M Production</h1>
                     </div>
                     <div className="strel">
-                        <p><i>Card</i><img src="./img/next.svg" /><i>Information</i><img src="./img/next.svg" /><i>Shipping<img src="./img/next.svg" /></i>Payment<img src="./img/next.svg" /></p>
+                    <i>Card</i><img src="./img/next.svg" /><i>Information</i><img src="./img/next.svg" /><i>Shipping </i><img src="./img/next.svg" /><i>Payment</i><img src="./img/next.svg" />
                     </div>
                     <div className="tabl">
                         <div>

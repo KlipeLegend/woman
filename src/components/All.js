@@ -3,6 +3,10 @@ import { useDispatch, useSelector } from 'react-redux/es/exports'
 import { Minus, Plus } from '../redux/action'
 
 export const All = () => {
+  const [like, setLike] = useState(false)
+  const Like = () => {
+    setLike(!like)
+  }
   const dispatch = useDispatch()
   const plusFun = () => {
     dispatch(Plus())
@@ -14,11 +18,21 @@ export const All = () => {
   const show = useSelector((state) => state.todoReducers.show)
   return (
     <div>
+
       <div className="Happy">
         <div className="">
           <img src="./img/aqua.png" alt="" />
         </div>
+
         <div className="">
+
+          <div className={like ? "likes activ" : "likes"}>
+            <h3>
+              Your favourite think <br /> was liked
+            </h3>
+          </div>
+
+
           <div className="">
             <h1 className='happy_coral'>Happy coral reef</h1>
             <p className='canvas'>Acrylic on canvas</p>
@@ -46,8 +60,9 @@ export const All = () => {
             </div>
             <div className="trup">
               <button className='add'>Add to cart</button>
-              <button className='hard'><img src="./img/hard.png" alt="" /></button>
+              <button className='hard' onClick={Like}><img src="./img/hard.png" alt="" /></button>
             </div>
+
             <div className="priloj">
               <a href=""><img src="./img/tel.png" alt="" /></a>
               <a href=""><img src="./img/sms.png" alt="" /></a>
@@ -58,10 +73,10 @@ export const All = () => {
           </div>
         </div>
       </div>
+
     </div>
   )
 }
-
 export const Adress = () => {
   return (
     <>
@@ -98,14 +113,11 @@ export const About = () => {
 export const Mani = () => {
   return (
     <>
-      <div className='main-all'>
-        <div className='mani-first'>
-          <div className='mani-second'>
-            <h1>50% of the money generated will be spent on coral rehabilitation. This is our pledge.</h1>
-          </div>
-          <div className='mani-first1'></div>
-        </div>
+
+      <div className='mani-second'> <hr />
+        <h1>50% of the money generated will rehabilitation. This is our pledge.</h1>
       </div>
+      <hr />
     </>
   )
 }
@@ -130,7 +142,6 @@ export const Watch = () => {
     </>
   )
 }
-
 export const Building = () => {
   return (
     <div className='adress'>
@@ -142,8 +153,8 @@ export const Building = () => {
 export const Button = () => {
   return (
     <div className='button-one'>
-        <button className='button-first'>Complete order</button>
-        <button className='button-firstt'>Return to shiping</button>
+      <button className='button-first'>Complete order</button>
+      <button className='button-firstt'>Return to shiping</button>
     </div>
   )
 }
@@ -196,7 +207,6 @@ export const Modal22 = () => {
     </>
   )
 }
-
 export const Flex = () => {
   return (
     <>
@@ -228,7 +238,6 @@ export const Flex = () => {
     </>
   )
 }
-
 export const Payme = () => {
   const [box, setBox] = useState(false)
   const [box1, setBox1] = useState(false)
@@ -278,9 +287,42 @@ export const Payme = () => {
 
         </div>
       </div>
-      
+
 
     </>
   )
 }
 
+export const Inputs = () => {
+  return (
+    <>
+      <div className="int_div">
+        <div className='int1'>
+          <h1>Contact information</h1>
+          <input type="Email" placeholder='Email' />
+          <p>Keep me up to date on news and exlusive offers</p>
+        </div>
+        <div>
+          <h1>Shipping address</h1>
+        </div>
+        <form className='int2'>
+          <input type="text" placeholder='First Name' />
+          <input type="text" placeholder='Last Name' />
+        </form>
+        <input type="text" placeholder='Company(optional)' />
+        <input type="text" placeholder='Address' />
+        <input type="text" placeholder='Appartment, suite, etc, (optional)' />
+        <input type="text" placeholder='City' />
+        <form >
+          <input type="text" placeholder='Country/Region' />
+          <input type="text" placeholder='State' />
+          <input type="password" placeholder='PIN code' />
+        </form>
+
+        <input type="number" placeholder='Phone' />
+
+      </div>
+
+    </>
+  )
+}
