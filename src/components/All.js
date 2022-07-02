@@ -1,6 +1,17 @@
 import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux/es/exports'
+import { Minus, Plus } from '../redux/action'
 
 export const All = () => {
+  const dispatch = useDispatch()
+  const plusFun = () => {
+    dispatch(Plus())
+  }
+  /////////////////////
+  const minusFun = () => {
+    dispatch(Minus())
+  }
+  const show = useSelector((state) => state.todoReducers.show)
   return (
     <div>
       <div className="Happy">
@@ -12,20 +23,26 @@ export const All = () => {
             <h1 className='happy_coral'>Happy coral reef</h1>
             <p className='canvas'>Acrylic on canvas</p>
             <p className="cent">₹ 5,000</p>
+            <br />
             <p className='capta'>Abstract Painting, Watercolor Art And Mixed <br /> Media Original Fine Art On Canvas.</p>
-            <p className='size'>Size:     “30 x 30"</p>
+            <br />
+            <p className='size'>Size: “30 x 30"</p>
+            <br />
             <div className="hert">
               <h5>Details:</h5><p className='tex'>MATERIALS (Mixed media on canvas. Ready to hang).</p>
             </div>
+            <br />
             <div className="hert">
               <h5>Inspiration:</h5><p className='tex'>Healthy coral reefs found in a cave during a dive in <br /> Nilaveli, in Trinco, Srilanka, prompted me to paint this.</p>
             </div>
             <p>Not framed</p>
+            <br />
             <h4>Qty:</h4>
+            <br />
             <div className="count">
-              <button className="minus">-</button>
-              <button className="zero">0</button>
-              <button className="plus">+</button>
+              <button className="minus" onClick={minusFun}>-</button>
+              <button className="zero">{show.count}</button>
+              <button className="plus" onClick={plusFun}>+</button>
             </div>
             <div className="trup">
               <button className='add'>Add to cart</button>

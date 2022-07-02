@@ -1,7 +1,6 @@
-export const Add = (data) => {
+export const Add = () => {
     return {
-        type: 'add',
-        payload: data
+        type: 'add'
     }
 }
 
@@ -29,5 +28,11 @@ export const Show = (data) => {
 export const Save = () => {
     return {
         type: 'save'
+    }
+}
+
+export const Clear = () => {
+    return {
+        type: 'clear'
     }
 }
