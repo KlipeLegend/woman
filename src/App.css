@@ -346,7 +346,7 @@ nav {
 }
 
 .button-one {
- margin-top: 30px;
+    margin-top: 30px;
 }
 
 
@@ -634,7 +634,7 @@ nav {
     color: #CBCF06;
     cursor: pointer;
     text-transform: uppercase;
-    
+
 }
 
 
@@ -732,13 +732,29 @@ nav {
 
 .hammasi {
     display: flex;
+    align-items: center;
     margin: 50px 200px 0px 200px;
     gap: 150px;
 
 }
 
+.absol {
+    top: 55px;
+    left: 175px;
+    background: #C4C4C4;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    border-radius: 50%;
+    padding: 2px 8px;
+    position: absolute !important;
+}
+
 .qty111 {
-    margin-top: 77px;
+    /* margin-top: 77px; */
 }
 
 .fl11 img {
@@ -883,20 +899,22 @@ nav {
 .box_button.activ {
     background: rgb(0, 98, 255);
 }
-.pay11{
+
+.pay11 {
     display: block;
     border-radius: 10px;
-      border: 1px solid rgb(195, 195, 195);    
-      width: 600px;
-  
+    border: 1px solid rgb(195, 195, 195);
+    width: 600px;
+
 }
-.pay_logo1{
+
+.pay_logo1 {
     /* margin-left: 10px; */
     display: flex;
     border-bottom: 1px solid rgb(195, 195, 195);
-  
+
 
     padding: 15px 20px;
     gap: 20px;
-  
+
 }

@@ -29,6 +29,7 @@ const Home = () => {
     }
     const view = () => {
         path('/shop')
+        haridFun()
     }
     const haridFun = () => {
         dispatch(Add())

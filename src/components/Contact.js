@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { Clear } from '../redux/action'
 import { Building, Button, Flex, Payme } from './All'
 
 const Contact = () => {
@@ -10,6 +12,7 @@ const Contact = () => {
     const Box = () => {
         setBox(!box)
     }
+    const dispatch = useDispatch()
     return (
         <div>
             <div className="to_katta">
@@ -54,7 +57,10 @@ const Contact = () => {
                             <h5>Use a different building address</h5>
                         </div>
                     </div>
-                    <Button />
+                    <div className='button-one'>
+                        <button className='button-first' onClick={() => dispatch(Clear())}>Complete order</button>
+                        <button className='button-firstt'>Return to shiping</button>
+                    </div>
                 </div>
                 <div className="to_ikki">
                     <Flex />
