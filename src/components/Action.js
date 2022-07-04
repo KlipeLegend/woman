@@ -1,12 +1,6 @@
 import React from 'react'
-<<<<<<< HEAD
 import { Button, Flex, Inputs } from './All'
-=======
-import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { Clear } from '../redux/action'
-import { Flex } from './All'
->>>>>>> ac7563d7a92925c441ef2b4b5261d906dd767f0b
 
 const Action = () => {
   const path = useNavigate()
@@ -21,15 +15,11 @@ const Action = () => {
           <div className="strel">
             <i>Card</i><img src="./img/next.svg" /><i>Information</i><img src="./img/next.svg" /><i>Shipping </i><img src="./img/next.svg" /><i>Payment</i><img src="./img/next.svg" />
           </div>
-<<<<<<< HEAD
           <Inputs/>
-          <Button />
-=======
           <div className='button-one'>
             <button className='button-first' onClick={()=>path('/paint')}>Complete order</button>
             <button className='button-firstt'>Return to shiping</button>
           </div>
->>>>>>> ac7563d7a92925c441ef2b4b5261d906dd767f0b
         </div>
         <div className="to_ikki">
           <Flex />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux/es/exports'
 import { useNavigate } from 'react-router-dom'
-import { Clear, Del, Minus, Mminus, Mplus, Open, Plus } from '../redux/action'
+import { Add, Clear, Del, Minus, Mminus, Mplus, Open, Plus } from '../redux/action'
 
 export const All = () => {
   const [like, setLike] = useState(false)
@@ -16,25 +16,17 @@ export const All = () => {
   const plusFun = () => {
     dispatch(Plus())
   }
-  /////////////////////
   const minusFun = () => {
     dispatch(Minus())
   }
   const show = useSelector((state) => state.todoReducers.show) || {}
   let a = JSON.parse(localStorage.getItem('harid')) || {}
   return (
-<<<<<<< HEAD
-    <div>
-
-      <div className="Happy">
-=======
     <>
       {show.hasOwnProperty('count') ? <div className="Happy">
->>>>>>> ac7563d7a92925c441ef2b4b5261d906dd767f0b
         <div className="">
           <img src={show.img} />
         </div>
-
         <div className="">
 
           <div className={like ? "likes activ" : "likes"}>
@@ -69,14 +61,11 @@ export const All = () => {
               <button className="zero">{show.count}</button>
               <button className="plus" onClick={plusFun}>+</button>
             </div>
-<<<<<<< HEAD
             <div className="trup">
-              <button className='add'>Add to cart</button>
+              <button className='add' onClick={() => dispatch(Add(show))}>Add to cart</button>
               <button className='hard' onClick={Like}><img src="./img/hard.png" alt="" /></button>
             </div>
 
-=======
->>>>>>> ac7563d7a92925c441ef2b4b5261d906dd767f0b
             <div className="priloj">
               <a href=""><img src="./img/tel.png" alt="" /></a>
               <a href=""><img src="./img/sms.png" alt="" /></a>
@@ -86,14 +75,9 @@ export const All = () => {
             <button className='but' onClick={sendFun}>Buy now</button>
           </div>
         </div>
-<<<<<<< HEAD
-      </div>
-
-    </div>
-=======
-      </div> : <h1>Toplimadi</h1>}
+      </div> : <h1>Toplimadi</h1>
+      }
     </>
->>>>>>> ac7563d7a92925c441ef2b4b5261d906dd767f0b
   )
 }
 export const Adress = () => {
@@ -173,11 +157,8 @@ export const Button = () => {
   const dispatch = useDispatch()
   return (
     <div className='button-one'>
-<<<<<<< HEAD
       <button className='button-first'>Complete order</button>
-=======
       <button className='button-first' onClick={() => dispatch(Clear())}>Complete order</button>
->>>>>>> ac7563d7a92925c441ef2b4b5261d906dd767f0b
       <button className='button-firstt'>Return to shiping</button>
     </div>
   )

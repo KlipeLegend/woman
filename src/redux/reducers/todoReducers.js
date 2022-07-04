@@ -92,14 +92,15 @@ const todoReducers = (state = initialData, { payload, type }) => {
         case 'del':
             localStorage.setItem('data', JSON.stringify(state.data.map((val) => val.id === payload.id ? { ...payload, add: false, count: 1 } : val)))
             localStorage.setItem('add', JSON.stringify(state.add.filter((val) => val.id !== payload.id)))
-            if (state.show.nomi === payload.nomi) {
-                localStorage.removeItem('harid')
+            console.log(1);
+            if (state.show.id !== payload.id) {
+                localStorage.setItem('harid', JSON.stringify({}))
             }
             return {
                 ...state,
                 data: JSON.parse(localStorage.getItem('data')) || [],
                 add: JSON.parse(localStorage.getItem('add')) || [],
-                show: JSON.parse(localStorage.getItem('harid')) || []
+                show: JSON.parse(localStorage.getItem('harid')) || {}
             }
         case 'plus':
             localStorage.setItem('data', JSON.stringify(state.data.map((val) => val.id === state.show.id ? { ...state.show, count: state.show.count + 1 } : val)))
@@ -170,7 +171,12 @@ const todoReducers = (state = initialData, { payload, type }) => {
                 show: JSON.parse(localStorage.getItem('harid')) || {},
             }
         case 'open':
-            localStorage.setItem('harid', JSON.stringify(payload))
+            console.log(2);
+            if (payload.id === state.show.id) {
+                localStorage.setItem('harid', JSON.stringify({}))
+            } else {
+                    localStorage.setItem('harid', JSON.stringify(payload))
+            }
             return { ...state, show: JSON.parse(localStorage.getItem('harid')) }
         default: return state
     }
