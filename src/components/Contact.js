@@ -1,11 +1,8 @@
 import React from 'react'
-<<<<<<< HEAD
 import {All} from './All'
 import {Adress} from './All'
-=======
 import { Flex, Payme } from './All'
 
->>>>>>> fd19f7d046e56ef14c24f9bd1945016e0462ce2c
 const Contact = () => {
     return (
         <div>

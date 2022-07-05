@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import React from 'react'
-=======
 import React, { useState } from 'react'
-
->>>>>>> fd19f7d046e56ef14c24f9bd1945016e0462ce2c
 export const All = () => {
   return (
     <div>
@@ -12,7 +7,6 @@ export const All = () => {
           <img src="./img/aqua.png" alt="" />
         </div>
         <div className="">
-<<<<<<< HEAD
             <div className="">
                 <h1 className='happy_coral'>Happy coral reef</h1>
                 <br />
@@ -49,41 +43,9 @@ export const All = () => {
                     <a href=""><img src="./img/face.png" alt="" /></a>
                 </div>
                 <button className='but'>Buy now</button>
-=======
-          <div className="">
-            <h1 className='happy_coral'>Happy coral reef</h1>
-            <p className='canvas'>Acrylic on canvas</p>
-            <p className="cent">₹ 5,000</p>
-            <p className='capta'>Abstract Painting, Watercolor Art And Mixed <br /> Media Original Fine Art On Canvas.</p>
-            <p className='size'>Size:     “30 x 30"</p>
-            <div className="hert">
-              <h5>Details:</h5><p className='tex'>MATERIALS (Mixed media on canvas. Ready to hang).</p>
->>>>>>> fd19f7d046e56ef14c24f9bd1945016e0462ce2c
-            </div>
-            <div className="hert">
-              <h5>Inspiration:</h5><p className='tex'>Healthy coral reefs found in a cave during a dive in <br /> Nilaveli, in Trinco, Srilanka, prompted me to paint this.</p>
-            </div>
-            <p>Not framed</p>
-            <h4>Qty:</h4>
-            <div className="count">
-              <button className="minus">-</button>
-              <button className="zero">0</button>
-              <button className="plus">+</button>
-            </div>
-            <div className="trup">
-              <button className='add'>Add to cart</button>
-              <button className='hard'><img src="./img/hard.png" alt="" /></button>
-            </div>
-            <div className="priloj">
-              <a href=""><img src="./img/tel.png" alt="" /></a>
-              <a href=""><img src="./img/sms.png" alt="" /></a>
-              <a href=""><img src="./img/insta.png" alt="" /></a>
-              <a href=""><img src="./img/face.png" alt="" /></a>
-            </div>
-            <button className='but'>Buy now</button>
-          </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }
@@ -269,7 +231,7 @@ export const Modal22 = () =>{
 
       </div>
   )
-}
+};
 
 export const Flex = () => {
   return (
@@ -352,8 +314,8 @@ export const Payme = () => {
 
         </div>
       </div>
-
     </>
   )
 }
+
 
