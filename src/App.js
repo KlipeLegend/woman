@@ -7,4 +7,5 @@ function From() {
     </>
   )
 }
-export default From
+export default From;
+

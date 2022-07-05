@@ -1,7 +1,14 @@
+<<<<<<< HEAD
+import React from 'react'
+import {All} from './All'
+import {Adress} from './All'
+import { Flex, Payme } from './All'
+=======
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Clear } from '../redux/action'
 import { Building, Button, Flex, Payme } from './All'
+>>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
 
 const Contact = () => {
     const [box1, setBox1] = useState(false)
@@ -15,11 +22,13 @@ const Contact = () => {
     const dispatch = useDispatch()
     return (
         <div>
+            <All/>
+            <Adress/>
             <div className="to_katta">
                 <div className="to_bir">
                     <div className="im">
                         <img src="./img/logotip.svg" alt="" />
-                        <h1>and T&M Production</h1>
+                        <h2 className='and'>and T&M Production</h2>
                     </div>
                     <div className="strel">
                     <i>Card</i><img src="./img/next.svg" /><i>Information</i><img src="./img/next.svg" /><i>Shipping </i><img src="./img/next.svg" /><i>Payment</i><img src="./img/next.svg" />

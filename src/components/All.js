@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+<<<<<<< HEAD
+=======
 import { useDispatch, useSelector } from 'react-redux/es/exports'
 import { useNavigate } from 'react-router-dom'
 import { Add, Clear, Del, Minus, Mminus, Mplus, Open, Plus } from '../redux/action'
 
+>>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
 export const All = () => {
   const [like, setLike] = useState(false)
   const Like = () => {
@@ -28,6 +31,48 @@ export const All = () => {
           <img src={show.img} />
         </div>
         <div className="">
+<<<<<<< HEAD
+            <div className="">
+                <h1 className='happy_coral'>Happy coral reef</h1>
+                <br />
+                <p className='canvas'>Acrylic on canvas</p>
+                <p className="cent">₹ 5,000</p>
+                <p className='capta'>Abstract Painting, Watercolor Art And Mixed <br /> Media Original Fine Art On Canvas.</p>
+                <p className='size'>Size:     “30 x 30"</p>
+                <br />
+                <div className="hert">
+                <h5>Details:</h5><p className='tex'>MATERIALS (Mixed media on canvas. Ready to hang).</p>
+                </div>
+                <br />
+                <div className="hert">
+                <h5>Inspiration:</h5><p className='tex'>Healthy coral reefs found in a cave during a dive in <br /> Nilaveli, in Trinco, Srilanka, prompted me to paint this.</p>
+                </div>
+                <br />
+                <p>Not framed</p>
+                <br />
+                <h4>Qty:</h4>
+                <br />
+                <div className="count">
+                    <button className="minus">-</button>
+                    <button className="zero">0</button>
+                    <button className="plus">+</button>
+                </div>
+                <div className="trup">
+                    <button className='add'>Add to cart</button>
+                    <button className='hard'><img src="./img/hard.png" alt="" /></button>
+                </div>
+                <div className="priloj">
+                    <a href=""><img src="./img/tel.png" alt="" /></a>
+                    <a href=""><img src="./img/sms.png" alt="" /></a>
+                    <a href=""><img src="./img/insta.png" alt="" /></a>
+                    <a href=""><img src="./img/face.png" alt="" /></a>
+                </div>
+                <button className='but'>Buy now</button>
+        </div>
+      </div>
+    </div>
+    </div>
+=======
 
           <div className={like ? "likes activ" : "likes"}>
             <h3>
@@ -78,6 +123,7 @@ export const All = () => {
       </div> : <h1>Toplimadi</h1>
       }
     </>
+>>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
   )
 }
 export const Adress = () => {
@@ -94,12 +140,79 @@ export const Adress = () => {
           <a className='next' href=""><p>Shiping  <img src="./img/next.png" alt="" /></p></a>
           <a className='next' href=""><p>Payment <img src="./img/next.png" alt="" /></p></a>
         </div>
+        <br />
+        <br />
+        <div className="">
+          <h2 className='hash2'>Contact information</h2>
+          <br />
+          <input type="text" className='company' placeholder='Email' />
+          <div className="box">
+          <input className='box2' type="checkbox" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, facilis.</p>
+          </div>
+        </div>
+        <div className="inputs">
+          <h2 className='hash2'>Shipping address</h2>
+          <br />
+          <div className="names">
+            <input type="text" className='first' placeholder='First name' />
+            <input type="text" className='last' placeholder='Last name'/>
+          </div>
+          <br />
+          <div>
+            <input type="text" className="company" placeholder='Company (optional)' />
+          </div>
+          <br />
+          <div className="">
+            <input type="text" className='company' placeholder='Address' />
+          </div>
+          <br />
+          <div className="">
+            <input type="text" className='company' placeholder='Apartmen,suite,etc,(optional)' />
+          </div>
+          <br />
+          <div className="">
+            <input type="text" className='company' placeholder='City' />
+          </div>
+          <br />
+        <div className="names">
+        <div>
+          <form>
+             <select className="selec" name="cars" >
+               <option value="volvo">Country/Region India</option>
+               <option value="saab">Saab 95</option>
+               <option value="mercedes">Mercedes SLK</option>
+             </select>
+            </form>
+          </div>
+          <div>
+          <form>
+             <select className="selec" name="cars" >
+               <option value="volvo">State</option>
+               <option value="saab">State</option>
+               <option value="mercedes">Mercedes SLK</option>
+             </select>
+            </form>
+          </div>
+          <div>
+          <form>
+             <input className='selec' type="password" placeholder='PIN kod' />
+            </form>
+          </div>
+        </div>
+        <br />
+          <div>
+            <input type="text" className="company" placeholder='Phone (optional)' />
+          </div>
+          <div className="teo">
+            <button className='but1'>continue to shiping </button>
+            <button className='but1'>Return to cart</button>
+          </div>
+        </div>
       </div>
     </>
   )
 }
-
-
 export const About = () => {
   return (
     <>
@@ -165,9 +278,39 @@ export const Button = () => {
 }
 
 
+<<<<<<< HEAD
+
+export const Modal22 = () =>{
+  return(
+    <div className='hammasi'>
+                    <div className="flex22">
+                        <div className="fl11">
+                            <img src="./img/fish.png" alt="" />
+                        </div>
+                    </div>
+                    <div className='qty111'>
+                        <p className='qty'>Qty</p>
+                        <div className='none'>
+                            <button className='pilus'>-</button>
+                            <button className='pilus1'>1</button>
+                            <button className='pilus'>+</button>
+                        </div>
+                        <div className="btnsd">
+                            <button>ADD TO CARD</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        </div>
+
+      </div>
+  )
+};
+
+export const Flex = () => {
+=======
 export const Modal22 = () => {
   const dispatch = useDispatch()
   const add = useSelector((state) => state.todoReducers.add)
+>>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
   return (
     <>
       <div className="plusCards">
@@ -271,12 +414,18 @@ export const Payme = () => {
 
         </div>
       </div>
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
     </>
   )
 }
 
+<<<<<<< HEAD
+
+=======
 export const Inputs = () => {
   return (
     <>
@@ -310,3 +459,4 @@ export const Inputs = () => {
     </>
   )
 }
+>>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
