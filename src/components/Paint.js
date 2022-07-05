@@ -4,7 +4,7 @@ import { Modal22 } from "./All"
 const Paint = () => {
   return (
     <div>
-    <Modal22/>
+    {/* <Modal22/> */}
     </div>
   )
 }
