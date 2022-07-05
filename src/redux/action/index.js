@@ -1,7 +1,6 @@
-export const Add = (data) => {
+export const Add = () => {
     return {
-        type: 'add',
-        payload: data
+        type: 'add'
     }
 }
 
@@ -29,5 +28,37 @@ export const Show = (data) => {
 export const Save = () => {
     return {
         type: 'save'
+    }
+}
+
+export const Clear = () => {
+    return {
+        type: 'clear'
+    }
+}
+
+export const Del = (data) => {
+    return {
+        type: 'del',
+        payload: data
+    }
+}
+export const Mminus = (data) => {
+    return {
+        type: 'Miniminus',
+        payload: data
+    }
+}
+export const Mplus = (data) => {
+    return {
+        type: 'Miniplus',
+        payload: data
+    }
+}
+
+export const Open = (data) => {
+    return {
+        type: 'open',
+        payload: data
     }
 }

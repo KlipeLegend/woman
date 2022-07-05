@@ -1,7 +1,18 @@
-import React from 'react'
-import { Flex, Payme } from './All'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { Clear } from '../redux/action'
+import { Building, Button, Flex, Payme } from './All'
 
 const Contact = () => {
+    const [box1, setBox1] = useState(false)
+    const [box, setBox] = useState(false)
+    const Box1 = () => {
+        setBox1(!box1)
+    }
+    const Box = () => {
+        setBox(!box)
+    }
+    const dispatch = useDispatch()
     return (
         <div>
             <div className="to_katta">
@@ -11,7 +22,7 @@ const Contact = () => {
                         <h1>and T&M Production</h1>
                     </div>
                     <div className="strel">
-                        <p><i>Card</i><img src="./img/next.svg" /><i>Information</i><img src="./img/next.svg" /><i>Shipping<img src="./img/next.svg" /></i>Payment<img src="./img/next.svg" /></p>
+                    <i>Card</i><img src="./img/next.svg" /><i>Information</i><img src="./img/next.svg" /><i>Shipping </i><img src="./img/next.svg" /><i>Payment</i><img src="./img/next.svg" />
                     </div>
                     <div className="tabl">
                         <div>
@@ -34,7 +45,22 @@ const Contact = () => {
                         <h2>₹ 5,180.54</h2>
 
                     </div>
-                    <Payme/>
+                    <Payme />
+                    <Building />
+                    <div className="pay11">
+                        <div className="pay_logo1">
+                            <button onClick={Box1} className={box1 ? "box_button activ" : "box_button"}></button>
+                            <h5>Same as shipping address</h5>
+                        </div>
+                        <div className="pay_logo1">
+                            <button onClick={Box} className={box ? "box_button activ" : "box_button"}></button>
+                            <h5>Use a different building address</h5>
+                        </div>
+                    </div>
+                    <div className='button-one'>
+                        <button className='button-first' onClick={() => dispatch(Clear())}>Complete order</button>
+                        <button className='button-firstt'>Return to shiping</button>
+                    </div>
                 </div>
                 <div className="to_ikki">
                     <Flex />
