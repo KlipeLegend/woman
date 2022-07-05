@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-import React from 'react'
+import React, { useState } from 'react'
 import {All} from './All'
 import {Adress} from './All'
-import { Flex, Payme } from './All'
-=======
-import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Clear } from '../redux/action'
 import { Building, Button, Flex, Payme } from './All'
->>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
 
 const Contact = () => {
     const [box1, setBox1] = useState(false)

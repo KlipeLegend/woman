@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
-<<<<<<< HEAD
-=======
 import { useDispatch, useSelector } from 'react-redux/es/exports'
 import { useNavigate } from 'react-router-dom'
 import { Add, Clear, Del, Minus, Mminus, Mplus, Open, Plus } from '../redux/action'
 
->>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
 export const All = () => {
   const [like, setLike] = useState(false)
   const Like = () => {
@@ -30,100 +27,54 @@ export const All = () => {
         <div className="">
           <img src={show.img} />
         </div>
+        <div className={like ? "likes activ" : "likes"}>
+          <h3>
+            Your favourite think <br /> was liked
+          </h3>
+        </div>
+
+
         <div className="">
-<<<<<<< HEAD
-            <div className="">
-                <h1 className='happy_coral'>Happy coral reef</h1>
-                <br />
-                <p className='canvas'>Acrylic on canvas</p>
-                <p className="cent">₹ 5,000</p>
-                <p className='capta'>Abstract Painting, Watercolor Art And Mixed <br /> Media Original Fine Art On Canvas.</p>
-                <p className='size'>Size:     “30 x 30"</p>
-                <br />
-                <div className="hert">
-                <h5>Details:</h5><p className='tex'>MATERIALS (Mixed media on canvas. Ready to hang).</p>
-                </div>
-                <br />
-                <div className="hert">
-                <h5>Inspiration:</h5><p className='tex'>Healthy coral reefs found in a cave during a dive in <br /> Nilaveli, in Trinco, Srilanka, prompted me to paint this.</p>
-                </div>
-                <br />
-                <p>Not framed</p>
-                <br />
-                <h4>Qty:</h4>
-                <br />
-                <div className="count">
-                    <button className="minus">-</button>
-                    <button className="zero">0</button>
-                    <button className="plus">+</button>
-                </div>
-                <div className="trup">
-                    <button className='add'>Add to cart</button>
-                    <button className='hard'><img src="./img/hard.png" alt="" /></button>
-                </div>
-                <div className="priloj">
-                    <a href=""><img src="./img/tel.png" alt="" /></a>
-                    <a href=""><img src="./img/sms.png" alt="" /></a>
-                    <a href=""><img src="./img/insta.png" alt="" /></a>
-                    <a href=""><img src="./img/face.png" alt="" /></a>
-                </div>
-                <button className='but'>Buy now</button>
-        </div>
-      </div>
-    </div>
-    </div>
-=======
-
-          <div className={like ? "likes activ" : "likes"}>
-            <h3>
-              Your favourite think <br /> was liked
-            </h3>
+          <h1 className='happy_coral'>Happy coral reef</h1>
+          <p className='happy_coral'>{show.nomi}</p>
+          <p className="cent">₹ {show.narxi}</p>
+          <br />
+          <p className='capta'>Abstract Painting, Watercolor Art And Mixed <br /> Media Original Fine Art On Canvas.</p>
+          <br />
+          <p className='size'>Size: “30 x 30"</p>
+          <br />
+          <div className="hert">
+            <h5>Details:</h5><p className='tex'>MATERIALS (Mixed media on canvas. Ready to hang).</p>
+          </div>
+          <br />
+          <div className="hert">
+            <h5>Inspiration:</h5><p className='tex'>Healthy coral reefs found in a cave during a dive in <br /> Nilaveli, in Trinco, Srilanka, prompted me to paint this.</p>
+          </div>
+          <p>Not framed</p>
+          <br />
+          <h4>Qty:</h4>
+          <br />
+          <div className="count">
+            <button className="minus" onClick={minusFun}>-</button>
+            <button className="zero">{show.count}</button>
+            <button className="plus" onClick={plusFun}>+</button>
+          </div>
+          <div className="trup">
+            <button className='add' onClick={() => dispatch(Add(show))}>Add to cart</button>
+            <button className='hard' onClick={Like}><img src="./img/hard.png" alt="" /></button>
           </div>
 
-
-          <div className="">
-            <h1 className='happy_coral'>Happy coral reef</h1>
-            <p className='happy_coral'>{show.nomi}</p>
-            <p className="cent">₹ {show.narxi}</p>
-            <br />
-            <p className='capta'>Abstract Painting, Watercolor Art And Mixed <br /> Media Original Fine Art On Canvas.</p>
-            <br />
-            <p className='size'>Size: “30 x 30"</p>
-            <br />
-            <div className="hert">
-              <h5>Details:</h5><p className='tex'>MATERIALS (Mixed media on canvas. Ready to hang).</p>
-            </div>
-            <br />
-            <div className="hert">
-              <h5>Inspiration:</h5><p className='tex'>Healthy coral reefs found in a cave during a dive in <br /> Nilaveli, in Trinco, Srilanka, prompted me to paint this.</p>
-            </div>
-            <p>Not framed</p>
-            <br />
-            <h4>Qty:</h4>
-            <br />
-            <div className="count">
-              <button className="minus" onClick={minusFun}>-</button>
-              <button className="zero">{show.count}</button>
-              <button className="plus" onClick={plusFun}>+</button>
-            </div>
-            <div className="trup">
-              <button className='add' onClick={() => dispatch(Add(show))}>Add to cart</button>
-              <button className='hard' onClick={Like}><img src="./img/hard.png" alt="" /></button>
-            </div>
-
-            <div className="priloj">
-              <a href=""><img src="./img/tel.png" alt="" /></a>
-              <a href=""><img src="./img/sms.png" alt="" /></a>
-              <a href=""><img src="./img/insta.png" alt="" /></a>
-              <a href=""><img src="./img/face.png" alt="" /></a>
-            </div>
-            <button className='but' onClick={sendFun}>Buy now</button>
+          <div className="priloj">
+            <a href=""><img src="./img/tel.png" alt="" /></a>
+            <a href=""><img src="./img/sms.png" alt="" /></a>
+            <a href=""><img src="./img/insta.png" alt="" /></a>
+            <a href=""><img src="./img/face.png" alt="" /></a>
           </div>
+          <button className='but' onClick={sendFun}>Buy now</button>
         </div>
-      </div> : <h1>Toplimadi</h1>
+      </div > : <h1>Toplimadi</h1>
       }
     </>
->>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
   )
 }
 export const Adress = () => {
@@ -147,8 +98,8 @@ export const Adress = () => {
           <br />
           <input type="text" className='company' placeholder='Email' />
           <div className="box">
-          <input className='box2' type="checkbox" />
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, facilis.</p>
+            <input className='box2' type="checkbox" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, facilis.</p>
           </div>
         </div>
         <div className="inputs">
@@ -156,7 +107,7 @@ export const Adress = () => {
           <br />
           <div className="names">
             <input type="text" className='first' placeholder='First name' />
-            <input type="text" className='last' placeholder='Last name'/>
+            <input type="text" className='last' placeholder='Last name' />
           </div>
           <br />
           <div>
@@ -175,32 +126,32 @@ export const Adress = () => {
             <input type="text" className='company' placeholder='City' />
           </div>
           <br />
-        <div className="names">
-        <div>
-          <form>
-             <select className="selec" name="cars" >
-               <option value="volvo">Country/Region India</option>
-               <option value="saab">Saab 95</option>
-               <option value="mercedes">Mercedes SLK</option>
-             </select>
-            </form>
+          <div className="names">
+            <div>
+              <form>
+                <select className="selec" name="cars" >
+                  <option value="volvo">Country/Region India</option>
+                  <option value="saab">Saab 95</option>
+                  <option value="mercedes">Mercedes SLK</option>
+                </select>
+              </form>
+            </div>
+            <div>
+              <form>
+                <select className="selec" name="cars" >
+                  <option value="volvo">State</option>
+                  <option value="saab">State</option>
+                  <option value="mercedes">Mercedes SLK</option>
+                </select>
+              </form>
+            </div>
+            <div>
+              <form>
+                <input className='selec' type="password" placeholder='PIN kod' />
+              </form>
+            </div>
           </div>
-          <div>
-          <form>
-             <select className="selec" name="cars" >
-               <option value="volvo">State</option>
-               <option value="saab">State</option>
-               <option value="mercedes">Mercedes SLK</option>
-             </select>
-            </form>
-          </div>
-          <div>
-          <form>
-             <input className='selec' type="password" placeholder='PIN kod' />
-            </form>
-          </div>
-        </div>
-        <br />
+          <br />
           <div>
             <input type="text" className="company" placeholder='Phone (optional)' />
           </div>
@@ -277,40 +228,9 @@ export const Button = () => {
   )
 }
 
-
-<<<<<<< HEAD
-
-export const Modal22 = () =>{
-  return(
-    <div className='hammasi'>
-                    <div className="flex22">
-                        <div className="fl11">
-                            <img src="./img/fish.png" alt="" />
-                        </div>
-                    </div>
-                    <div className='qty111'>
-                        <p className='qty'>Qty</p>
-                        <div className='none'>
-                            <button className='pilus'>-</button>
-                            <button className='pilus1'>1</button>
-                            <button className='pilus'>+</button>
-                        </div>
-                        <div className="btnsd">
-                            <button>ADD TO CARD</button>
-                            <button>BUY NOW</button>
-                        </div>
-                        </div>
-
-      </div>
-  )
-};
-
-export const Flex = () => {
-=======
 export const Modal22 = () => {
   const dispatch = useDispatch()
   const add = useSelector((state) => state.todoReducers.add)
->>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
   return (
     <>
       <div className="plusCards">
@@ -414,18 +334,11 @@ export const Payme = () => {
 
         </div>
       </div>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
     </>
   )
 }
 
-<<<<<<< HEAD
 
-=======
 export const Inputs = () => {
   return (
     <>
@@ -459,4 +372,3 @@ export const Inputs = () => {
     </>
   )
 }
->>>>>>> 58a666864357d06252d428e6c708fee7ad270d03
