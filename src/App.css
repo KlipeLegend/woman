@@ -751,9 +751,6 @@ nav {
     position: absolute !important;
 }
 
-.qty111 {
-    /* margin-top: 77px; */
-}
 
 .fl11 img {
     width: 250px;
@@ -896,8 +893,6 @@ nav {
 .box_button.activ {
     background: rgb(0, 98, 255);
 }
-<<<<<<< HEAD
-=======
 
 .pay11 {
     display: block;
@@ -1231,4 +1226,3 @@ nav {
         margin-top: -200px;
     }
 }
->>>>>>> 84680f9026abf166b0ab65e0a2f83725e286338d
